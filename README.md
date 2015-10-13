@@ -21,3 +21,4 @@ List of contributors:
 Shannon Tarislar (aka Beltayn) - Initial project setup, server backend and database.
 Arianna Chang
 Vere Perrot
+HsuanTang Chiu - front end
