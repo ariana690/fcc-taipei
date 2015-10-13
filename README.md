@@ -20,3 +20,4 @@ Please add your name and what you contributed in this file - this is an exercise
 List of contributors: 
 Shannon Tarislar (aka Beltayn) - Initial project setup, server backend and database.
 Arianna Chang
+Vere Perrot
