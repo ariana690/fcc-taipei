@@ -17,6 +17,6 @@ For further info on Free Code Camp, checkout this link: http://freecodecamp.com/
 
 Please add your name and what you contributed in this file - this is an exercise to familiarize ourselves with github submissions.
 
-List of contributors: 
-Shannon Tarislar (aka Beltayn) - Initial project setup, server backend and database.
-
+List of contributors:  
+Shannon Tarislar (aka Beltayn) - Initial project setup, server backend and database.  
+Chia-Ching Yu (aka Ethan) - Server backend and database.
