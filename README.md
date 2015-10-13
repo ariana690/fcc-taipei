@@ -23,4 +23,5 @@ Shannon Tarislar (aka Beltayn) - Initial project setup, server backend and datab
 Arianna Chang
 Vere Perrot
 Chia-Ching Yu (aka Ethan) - Server backend and database.
+HsuanTang Chiu - front end
 
