@@ -17,10 +17,10 @@ For further info on Free Code Camp, checkout this link: http://freecodecamp.com/
 
 Please add your name and what you contributed in this file - this is an exercise to familiarize ourselves with github submissions.
 
-<<<<<<< HEAD
+
 List of contributors: 
 Shannon Tarislar (aka Beltayn) - Initial project setup, server backend and database.
 Arianna Chang
 Vere Perrot
 Chia-Ching Yu (aka Ethan) - Server backend and database.
->>>>>>> cbb848de1bb4485fce4fd3619fa3c1aa4742d849
+
