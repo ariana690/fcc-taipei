@@ -1,5 +1,4 @@
-# Free Code Camp  - Taipei community project 1.0
-__________________________________________
+## Free Code Camp  - Taipei community project 1.0
 
 This is a community project by members of Free Code Camp, Taipei. The objective of this project is for all team members to gain experience working in a collaborative environment with github.
 We will be creating a simple webapp which has a one page user interface page.
