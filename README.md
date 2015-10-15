@@ -26,3 +26,4 @@ Please add your name and what you contributed in this file - this is an exercise
 - Huang-Ming Chang - Server backend and database  
 - Tank Lin - I want to try api or backend! Happy coding!!
 - Mike Chan - Coding is fun! I will participate the backend and database building region! 
+- Sophia Chia - Frontend Web Design 
