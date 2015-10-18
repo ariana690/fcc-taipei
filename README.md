@@ -28,4 +28,4 @@ Please add your name and what you contributed in this file - this is an exercise
 - Mike Chan - Coding is fun! I will participate the backend and database building region! 
 - Sophia Chia - Frontend Web Design 
 - Jack Chang (aka jkaichang) - Sever backend and database. 
-
+- Tzu-Yu Chen (wesley) - Frontend Web Design
