@@ -1,0 +1,28 @@
+header {
+  
+  
+}
+h1 {
+  
+}
+.form-control {
+  margin: 0 auto;
+  max-width: 500px;
+  min-height: 150px;
+}
+
+.well {
+  margin: 0 auto;
+  max-width: 500px;
+  min-height: 150px;
+  background: #aaaaaa;
+}
+body {
+  text-align: center;
+
+  
+}
+.btn {
+  margin: 20px
+  
+}
