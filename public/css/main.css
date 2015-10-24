@@ -1,28 +1,31 @@
-header {
-  
-  
+.drakgray{
+  color:darkgray
 }
-h1 {
-  
+a.user-name:hover{
+  font-style:underline;
 }
-.form-control {
-  margin: 0 auto;
-  max-width: 500px;
-  min-height: 150px;
+a.user-name:link{
+  color:#995400
 }
-
-.well {
-  margin: 0 auto;
-  max-width: 500px;
-  min-height: 150px;
-  background: #aaaaaa;
+a.title:hover{
+  color:orange
+  text-decoration: none;
 }
-body {
-  text-align: center;
-
-  
+a.title:link{
+  color:black
 }
-.btn {
-  margin: 20px
-  
+.darkorange{
+  color:#995400
+}
+.orange{
+  color:orange
+}
+.left{
+  text-align:left !important;
+}
+.right{
+  text-align:right !important;
+}
+.bold{
+  font-weight:bold
 }

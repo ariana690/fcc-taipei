@@ -11,13 +11,82 @@
         
     </head>
     <body>
-        <h1 class="text-center text-primary">Free Code Camp - Taipei</h1>
-        <br>
-        <h2 class="text-center text-primary">Messages</h2>
-        <div id="postsList"></div>
-            <hr>    
-            <textarea class="form-control" rows="3" id="inputText"></textarea>
-            <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
+       <div style="text-align:center">
+  <div style="background:#4a2b0f;text-align:left;padding-left:40px">
+    <div class="row">
+      <div class="col-xs-5">
+    <a href="#"><img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="learn to code javascript at Free Code Camp logo" class="img-responsive nav-logo" style="padding:20px 0px 20px 0px;" ></a>
+      </div>
+        <div class="col-xs-2">
+      <h1 style="color:#FFD0BC;font-size:xx-large;padding:10px 0px 20px 0px;">Taipei</h1>
+      </div>
+    </div><!--row-->
+  </div>
+  <div class="row">
+    <div class="col-xs-7">
+      <h1 class="darkorange" style="font-size:60px;font-family:arial;">Message Board</h1></div>
+
+    <div class="col-xs-5">
+      <img src="http://findicons.com/files/icons/624/zoom_eyed_creatures/64/devid.png" height="100px" />
+      <h3 class="bold">User Name</h3> Log Out</br>
+      <button class="btn bold" onclick="window.location.href='http://codepen.io/perrot/full/MarRYy'"><img src="http://findicons.com/files/icons/99/office/32/edit.png" />New Post</button>
+    </div>
+  </div>
+  <!--end of row-->
+  <div class="row">
+    <div class="col-xs-3">
+      <img src="http://findicons.com/files/icons/624/zoom_eyed_creatures/64/devid.png" height="100px" />
+      <h1 class="drakgray">#1</h1>
+    </div>
+    <div class="col-xs-9">
+      <span class="drakgray">yyyy/mm/dd</span>
+      <br/>
+      <div class="left">
+        <h3 class="darkorange"><a href="#" class="user-name">User Name</a></h3>
+        <h3 class="bold"><a href="#" class="title">這是文章主題</a></h3>
+        <textarea style="width:60%;height:150px">從前有位以他智慧而聞名全國的國王，世界上的事情他都沒有不知道的，而且，好像再秘密的事情也能有風聲傳到他的耳朵裡。不過，這位國王有個古怪的習慣：每天吃完晚飯，桌子已經收拾乾淨，而且其他人也都已離開之後，一位忠實的侍從會再來給他端來一道菜。</textarea>
+        <br/>
+        <img src="http://findicons.com/files/icons/990/vistaico_toolbar/48/thumbs_up.png" />
+        
+        <a href="javascript:showMenu('1')" ><img src="http://findicons.com/files/icons/2166/oxygen/48/arrow_up.png" /></a><img src="http://findicons.com/files/icons/1620/crystal_project/64/chat.png" width="64px"
+        /><span>10</span><span class="bold">Follow</span>
+        <div id="arrow1" style="padding-left:60px;display:none">
+          <span class="w3-xlarge"><i class="fa fa-facebook"></i></span>
+          <span class="w3-xlarge"><i class="fa fa-twitter"></i></span>
+          <span class="w3-xlarge"><i class="fa fa-linkedin"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-xs-3">
+      <img src="http://findicons.com/files/icons/624/zoom_eyed_creatures/64/devid.png" height="100px" />
+      <h1 class="drakgray">#2</h1>
+    </div>
+    <div class="col-xs-9">
+      <span class="drakgray">yyyy/mm/dd</span>
+      <br/>
+      <div class="left">
+        <h3 class="darkorange"><a href="#" class="user-name">User Name</a></h3>
+        <h3 class="bold orange"><a href="#" class="title">This is the Title of the Post</a></h3>
+        <textarea style="width:60%;height:150px">There is a lot of evidence that money is not the biggest driver for people. But purpose is. We all enjoy doing something meaningful, something that serves a purpose we think worthy. Contributing to an open source projects is definitely a good way to do something meaningful.
+
+sharing
+First, the philosophy of open source means doing something that allows people to use, modify, share and study valuable code, which is geared towared helping others, something that resonates with many developers. Taking part in open source means working for the advancement of greater shared knowledge.</textarea>
+        <br/>
+        <img src="http://findicons.com/files/icons/990/vistaico_toolbar/48/thumbs_up.png" />
+        <a href="javascript:showMenu('2')" >
+          <img src="http://findicons.com/files/icons/2166/oxygen/48/arrow_up.png" /></a><img src="http://findicons.com/files/icons/1620/crystal_project/64/chat.png" width="64px"
+        /><span>10</span><span class="bold">Follow</span>
+        <div id="arrow2" style="padding-left:60px;display:none">
+          <span class="w3-xlarge"><i class="fa fa-facebook"></i></span>
+          <span class="w3-xlarge"><i class="fa fa-twitter"></i></span>
+          <span class="w3-xlarge"><i class="fa fa-linkedin"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
             
     <script type="text/javascript" src="/controllers/inputhandler.client.js"></script>
     </body>
