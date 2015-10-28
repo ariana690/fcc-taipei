@@ -30,4 +30,4 @@ Please add your name and what you contributed in this file - this is an exercise
 - Jack Chang (aka jkaichang) - Sever backend and database. 
 - Tzu-Yu Chen (wesley) - Frontend Web Design
 - Rafael Lin - Interested in BackEnd technical skill.
-- Shian (chuah48263) - Wanna learn ReactJS and involved in backend dev.
+- Shian (chuah48263) - Wanna learn about ReactJS and participate in backend development.
