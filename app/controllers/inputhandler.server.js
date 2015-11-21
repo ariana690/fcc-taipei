@@ -2,6 +2,7 @@
 
 var ObjectID = require('mongodb').ObjectID;
 
+
 function inputHandler (db) {
 
     var posts = db.collection('posts');
@@ -55,26 +56,10 @@ function inputHandler (db) {
 
     this.removePost = function(req, res) {
         req.on('data', function(data) {
-         //var data = JSON.parse(data);
-         /*
-         //ADD FUNCTIONALITY TO DELETE POSTS by ObjectID
-        
-
-        var deleteString = {};
-//        var  hello_obj = {"_id" : ObjectId("565013def1db83325fc13c98") } ;
-        deleteString._id = ObjectID("565013def1db83325fc13c98");
-console.log( "1" + hello_obj._id ) ;
-//console.log(pe "2" + ty
-        //deleteString._id = ObjectID(data.id);
-        //leteString._id = 'ObjectId("' + JSON.parse(data)._id + '")';        
-       // deleteString._id = JSON.parse(data)._id;
-        //console.log(JSON.parse(data.id));
-        //console.log(JSON.parse(data).id);
-           // posts.remove({_id: OjectId(deleteString)});
-posts.remove( hello_obj ) ;
-            console.log(typeof deleteString);
-            console.log(deleteString);
-            console.log("Delete Called"); */
+        var data = JSON.parse(data);
+        console.log("Deleting record: " + data.id);
+        var id = new ObjectID(data.id);
+        posts.remove({_id: id});
         }).setEncoding("utf8");
                 
 
