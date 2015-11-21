@@ -15,8 +15,8 @@ module.exports = function(app, db) {
   //refactor
   app.route('/api/posts')
             .get(inputHandler.getPosts)
-            .post(inputHandler.post);
-            /*.delete(clickHandler.resetClicks);*/
+            .post(inputHandler.post)
+            .delete(inputHandler.removePost);
   
     
     
