@@ -38,21 +38,32 @@ function inputHandler (db) {
             }
         });
     };
-/*
-    this.removePost = function(req, res){
-       req.on('data', function(data) {
-            data = JSON.parse(data);
-            console.log(data);
-            //posts.remove(data);
-        }).setEncoding("utf8");
+    
+   this.editPost = function(req, res) {
+        req.on('data', function(data) {
+        var data = JSON.parse(data);
+        console.log("Updating record: " + data.id);
+        var id = new ObjectID(data.id);
+        console.log(id);
+
+        if (data.body != undefined) {
+                posts.update({_id : id}, { $set : { body : data.body } });        
+        }
+
+        if (data.title != undefined) {
+                posts.update({_id : id}, { $set : { title : data.title } });        
+        }
         
+        }).setEncoding("utf8");
+                
+
         req.on('end', function() {
            res.writeHead(200);
            res.end();
         });
-    };
+
+        
 }
-*/
 
     this.removePost = function(req, res) {
         req.on('data', function(data) {
@@ -60,6 +71,7 @@ function inputHandler (db) {
         console.log("Deleting record: " + data.id);
         var id = new ObjectID(data.id);
         posts.remove({_id: id});
+        console.log("Deleted record: " + id);
         }).setEncoding("utf8");
                 
 
@@ -81,7 +93,6 @@ function inputHandler (db) {
             record.body = data.body;
             record.title = data.title;
             record.date = new Date();
-            console.log(JSON.stringify(record));
             posts.insert(record);
         }).setEncoding("utf8");
         

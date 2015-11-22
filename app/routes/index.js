@@ -16,7 +16,8 @@ module.exports = function(app, db) {
   app.route('/api/posts')
             .get(inputHandler.getPosts)
             .post(inputHandler.post)
-            .delete(inputHandler.removePost);
+            .delete(inputHandler.removePost)
+            .put(inputHandler.editPost);
   
     
     
