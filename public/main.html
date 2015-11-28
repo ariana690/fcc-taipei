@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freecodecamp message board</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+    <div class="fcc-panel cf">
+      <h1 class="fcc-logo">
+        <a href="">
+          <img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="Free Code Camp logo">
+          Taipei
+        </a>
+      </h1>
+
+      <i class="material-icons ts">account_circle</i>
+      
+      <h2 class="fcc-username">username</h2>
+       
+      <ul class="fcc-account-menu">
+        <li class="ts">
+          <i class="material-icons">accessibility</i>
+          log-in
+        </li>
+        <li class="ts">
+          <i class="material-icons">accessibility</i>
+          item-2
+        </li>
+        <li class="ts">
+          <i class="material-icons">accessibility</i>
+          itme-3
+        </li>
+      </ul>
+    </div>
+	</header> <!--[end] header-->
+	
+	<div class="wrapper ts">
+	  <h2 class="page-subject ts">Message Board</h2>
+	  
+	  <section class="text-content">
+	    <label for="msg-subject">SUBJECT</label>
+	  
+	    <input type="text" id="" placeholder="title" class="ts" required>
+	  
+	    <textarea name="" id="" cols="30" rows="10" placeholder="Write here &#9786;" required></textarea>
+	  
+	    <a href="" role="submit" class="msg-post ts">&#9998; post</a>
+	  </section>
+
+    <article class="msg-content">
+      <h2 class="sr">post-articles</h2>
+
+      <section class="post-content">
+        <div class="post-wrapper">
+        <span class="post-num">#1</span>
+        <i class="material-icons ts">account_circle</i>
+        <h2 class="fcc-username ts">      
+          guest name
+        </h2>
+        
+        <i id="arrow" class="material-icons">keyboard_arrow_down</i>
+
+        <h3 class="post-title">CHANCES ARE</h3>
+        
+        <div class="post-date">2015/11/08</div>
+        
+        <p class="post-paragraph">
+          Chances are 'cause I wear a silly grin
+The moment you come into view
+Chances are you think that I'm in love with you
+
+Just because my composure sort of slips
+The moment that your lips meet mine
+Chances are you think my heart's your Valentine
+
+In the magic of moonlight when I sigh, hold me close, dear
+Chances are you believe the stars that fill the skies are in my eyes
+
+Guess you feel you'll always be the one and only one for me
+And if you think you could
+Well, chances are your chances are awfully good
+
+Chances are you believe the stars that fill the skies are in my eyes
+
+Guess you feel you'll always be the one and only one for me
+And if you think you could
+Well, chances are your chances are awfully good
+
+          
+          
+        </p>
+        
+        <ul class="tool-bar cf">
+          <li class="thumb"><i class="material-icons">thumb_up</i>10</li>
+          <li class="thumb"><i class="material-icons active">thumb_down</i>1</li>
+          <li class="post-comment"><i class="fa fa-commenting-o"></i>4</li>
+        </ul>
+        </div>
+      
+      </section> 
+
+        <ul class="post-content-reply">
+          <li class="">
+            <section class="post-reply-wrapper">
+              <i class="material-icons ts">account_circle</i>
+              <h2 class="fcc-username ts">      
+                Mathis
+              </h2>
+
+              <div class="post-date">2015/11/08</div>
+              <p class="post-paragraph">LOL</p>
+              
+              <ul class="tool-bar cf">
+<!--                <li class="post-comment"><i class="fa fa-commenting-o"></i>4</li>-->
+                <li class="thumb"><i class="material-icons">thumb_up</i>910</li>
+                <li class="thumb"><i class="material-icons">thumb_down</i>1</li>
+              </ul>
+              
+            </section>  
+          </li>
+          
+          <li class="">
+            <section class="post-reply-wrapper">
+              <i class="material-icons ts">account_circle</i>
+              <h2 class="fcc-username ts">      
+                ELLIS
+              </h2>
+
+              <div class="post-date">2015/11/08</div>
+              <p class="post-paragraph cover">
+Was it 1957 that hit the charts?   I was about 12 then...?  Where did the time go...  Way back then 70 would have seems so old, and now here I am--almost 70?  How did that happen?  A lovely song.</p>
+              
+              <ul class="tool-bar cf">
+<!--                <li class="post-comment"><i class="fa fa-commenting-o"></i>4</li>-->
+                <li class="thumb"><i class="material-icons">thumb_up</i>0</li>
+                <li class="thumb"><i class="material-icons">thumb_down</i>0</li>
+              </ul>
+              
+            </section>  
+          </li>
+          
+          
+          
+        </ul>
+
+    </article> <!--[end] msg-content-->
+
+	  
+<!--	  <div style="height:100px; background-color:#eee;"></div>-->
+	  
+	  
+	  
+	</div> <!--[end] wrapper-->
+	
+	<i class="material-icons goto-top">publish</i>
+	
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
