@@ -1,10 +1,12 @@
 'use strict';
 
 var express = require('express'),
+    http = require('http'),
     routes = require('./app/routes/index.js'),
     mongo = require('mongodb');
 
 var app = express();
+app.set('port', process.env.PORT || 3000);
 
 mongo.connect('mongodb://localhost:27017/fcc-taipei', function(err, db){
     
@@ -20,10 +22,8 @@ mongo.connect('mongodb://localhost:27017/fcc-taipei', function(err, db){
     
     routes(app, db);
 
-    app.listen(process.env.PORT, function() {
-    //app.listen(3000, function() {  //port changed for Cloud 9
-        console.log('Listening on port ' + process.env.PORT + '...');
-    
+    http.createServer(app).listen(app.get('port'), function() {
+        console.log('Listening on port ' + app.get('port'));
     });
     
 });

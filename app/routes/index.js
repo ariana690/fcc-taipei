@@ -8,7 +8,7 @@ module.exports = function(app, db) {
   
   app.route('/').get(function(req, res) {
       //console.log("connection on '/'");
-      res.sendFile(process.cwd() + '/public/index.html');
+      res.sendFile(process.cwd() + '/public/main.html');
       
   });
   
@@ -16,8 +16,10 @@ module.exports = function(app, db) {
   app.route('/api/posts')
             .get(inputHandler.getPosts)
             .post(inputHandler.post)
-            .delete(inputHandler.removePost)
-            .put(inputHandler.editPost);
+            .put(inputHandler.editPost)
+            .delete(inputHandler.removePost);
+            
+  app.get('/api/edit/:id', inputHandler.getPost);           
   
     
     
