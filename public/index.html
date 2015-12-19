@@ -1,25 +1,130 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
-   </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>freecodecamp message board</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+  <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body ng-app="myApp">
+  <header>
+    <div class="fcc-panel cf">
+      <h1 class="fcc-logo">
+        <a href="">
+          <img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="Free Code Camp logo">
+          Taipei
+        </a>
+      </h1>
 
-   <body>
+      <i class="material-icons ts">account_circle</i>
+      
+      <h2 class="fcc-username">username</h2>
+       
+      <ul class="fcc-account-menu">
+        <li class="ts">
+          <i class="material-icons">accessibility</i>
+          log-in
+        </li>
+        <li class="ts">
+          <i class="material-icons">accessibility</i>
+          item-2
+        </li>
+        <li class="ts">
+          <i class="material-icons">accessibility</i>
+          itme-3
+        </li>
+      </ul>
+    </div>
+  </header> <!--[end] header-->
+  
+ <div ng-view></div>
 
-    <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
-      </div>
+  
+  <!--<div class="wrapper ts" ng-controller="MyCtrl">-->
+  <!--  <h2 class="page-subject ts">Message Board</h2>    -->
+    
+  <!--  <form role="form" ng-submit="addPost()">-->
+      
+  <!--    <label for="msg-subject">SUBJECT</label>-->
+      
+  <!--    <input type="text" id="msg-subject" placeholder="title" class="ts" required ng-model="member.title">-->
+      
+  <!--    <textarea name="" id="" cols="30" rows="10" placeholder="Write here &#9786;" required ng-model="member.body"></textarea>-->
+      
+  <!--    <span class="input-group-btn">-->
+  <!--      <input type="submit" value="Post" class="btn btn-primary">-->
+  <!--    </span>-->
+    
+    <!--<a href="" role="submit" class="msg-post ts">&#9998; post</a>-->
+  <!--  </form>  -->
+    
+    
+  <!--  <article class="msg-content" ng-repeat="post in posts | orderBy: '-order'">-->
+  <!--    <h2 class="sr">post-articles</h2>-->
+  <!--    <section class="post-content">-->
+  <!--      <span class="post-num">#{{$index + 1}}</span>-->
+  <!--      <i class="material-icons ts">account_circle</i>-->
+  <!--      <h2 class="fcc-username ts">      -->
+  <!--        {{ post.name }}-->
+  <!--      </h2>-->
+        
+        <!--<form ng-submit="editPost(post._id)">-->
+        <!--  <input type="text" ng-model="post.title"/>-->
+        <!--  <input type="text" ng-model="post.body"/>-->
+        <!--  <input type="submit" value="Submit"/>-->
+        <!--</form>-->
+        
+  <!--      <button ng-click="deletePost(post._id)">Delete</button>-->
+        
+  <!--      <h3 class="post-title">{{ post.title }}</h3>-->
+        
+  <!--      <div class="post-date">{{ post.date }}</div>-->
+        
+  <!--      <p class="post-paragraph">{{ post.body }}</p>-->
+        
+  <!--      <ul class="tool-bar cf">-->
+  <!--        <li class="post-comment"><i class="fa fa-commenting-o"></i>4</li>-->
+  <!--        <li class="thumb"><i class="material-icons active">thumb_down</i>1</li>-->
+  <!--        <li class="thumb"><i class="material-icons">thumb_up</i>10</li>-->
+  <!--      </ul>-->
+        
+  <!--      <ul class="post-content-reply">-->
+  <!--        <li class="" ng-repeat="reply in member.replies | orderBy: -postTime">-->
+  <!--          <section class="post-content">-->
+  <!--            <i class="material-icons ts">account_circle</i>-->
+  <!--            <h2 class="fcc-username ts">{{ reply.name }}</h2>-->
 
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
-         </div>
-      </div>
+  <!--            <div class="post-date">2015/11/08</div>-->
+  <!--            <p class="post-paragraph">{{ reply.body }}</p>-->
+              
+  <!--            <ul class="tool-bar cf">-->
+  <!--              <li class="thumb"><i class="material-icons">thumb_down</i>1</li>-->
+  <!--              <li class="thumb"><i class="material-icons">thumb_up</i>910</li>-->
+  <!--            </ul>              -->
+  <!--          </section>-->
+  <!--        </li>-->
+  <!--      </ul>-->
+        
+  <!--    </section> -->
+      
+  <!--  </article> <!--[end] msg-content-->-->
+    
+  <!--  <div style="height:100px; background-color:#eee;"></div>-->
+    
+  <!--</div> -->
+  
+  <!--[end] wrapper-->
+  
+  <i class="material-icons goto-top">publish</i>  
 
-   </body>
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular-route.min.js"></script>
+  <script src="/public/main.js"></script>
+  <script src="/public/controllers/controller.js"></script>
+</body>
 </html>

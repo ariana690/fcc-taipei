@@ -6,10 +6,13 @@ var express = require('express'),
     mongo = require('mongodb');
 
 var app = express();
+
+//This line accounts for the C9.io dev environment's usage of the process.env.PORT variable to run apps.
+//when not running on c9, it will default to port 3000
 app.set('port', process.env.PORT || 3000);
 
 mongo.connect('mongodb://localhost:27017/fcc-taipei', function(err, db){
-    
+
     if (err) {
         throw new Error('Database failed to connect!');
     } else {
@@ -19,11 +22,11 @@ mongo.connect('mongodb://localhost:27017/fcc-taipei', function(err, db){
     //makes /public a shortcut to the public directory
     app.use('/public', express.static(process.cwd() + '/public'));
     app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
-    
+
     routes(app, db);
 
     http.createServer(app).listen(app.get('port'), function() {
         console.log('Listening on port ' + app.get('port'));
     });
-    
+
 });

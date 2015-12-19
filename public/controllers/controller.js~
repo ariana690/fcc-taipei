@@ -11,7 +11,7 @@ myApp.controller('MainCtrl', function($scope, $http, $location, $routeParams) {
           post.order = post.date.getTime();
         });
                   
-        //console.log(typeof response[0].date);
+        console.log(typeof response[0].date);
 
         $scope.posts = response;
         // $scope.member.title = '';
